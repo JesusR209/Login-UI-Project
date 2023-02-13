@@ -1,67 +1,116 @@
-
 body {
-    background: rgb(2,0,36);
-background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 11%, rgba(0,212,255,1) 73%);
+    background: rgb(2, 0, 36);
+    background: radial-gradient(
+      circle,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 11%,
+      rgba(0, 212, 255, 1) 73%
+    );
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      /* flex-direction: column;
+    align-items: center; */
+    padding-right: 55px;
+    }
 }
 
-.box{
+
+  .box {
     background-color: rgb(255, 255, 255);
-    box-shadow: -3px 4px 14px -4px rgba(0,0,0,0.59);
+    box-shadow: -3px 4px 14px -4px rgba(0, 0, 0, 0.59);
     border-radius: 35px;
-    padding: 20px ;
+    padding: 40px;
+   
     margin: 250px;
     display: grid;
-    width: 50%;
-  /* place-items: center; */
-}
-
-
-html, body {
-   
-display: grid;
-height: 100%;
-place-items: center;
-}
-h1 {
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     place-items: center; 
 
-}
-.inputs {
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .sign-in-button {
+    padding: 10px 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+ 
+  @media only screen and (max-width: 600px) {
+    .box {
+      
+      width: 100%;
+    }
+
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 70%;
+    }
+  }
+
+
+
+
+
+
+
+  html,
+  body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+  }
+  h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .inputs {
     margin: 5%;
-   height: 20px;
-   border-radius: 35px;
-}
-/* h2 {
-    color: silver;
-    padding: 20px;
-    margin-left: 330px;
-} */
-hr {
+    height: 20px;
+    border-radius: 35px;
+  }
+   h2 {
+      color: silver;
+      padding: 20px;
+      margin-left: 330px;
+  } 
+  hr {
     color: silver;
     margin-left: auto;
     margin-right: 330px;
-    
-}
-.sign-in-button:hover {
+  }
+  .sign-in-button:hover {
     background-color: rgb(167, 227, 255);
     color: white;
     cursor: pointer;
   }
 
-.sign-in-button{
+  .sign-in-button {
     
-    margin:auto;
+    margin: auto;
     padding: 15px 10px 10px 15px;
-   margin-top: 40px;
+    margin-top: 40px;
     width: 70%;
     text-align: center;
     color: white;
     background: rgb(92, 143, 255);
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);  */
     border-radius: 35px;
     font-size: 20px;
-    
-}
-
-
+  }
